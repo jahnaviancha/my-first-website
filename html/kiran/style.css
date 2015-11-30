@@ -1,3 +1,7 @@
-body{
-	background-color: #F1F1F1;
+.page {
+	display: none;
+}
+
+.current {
+	display: block;
 }
