@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>
+			jQuery alert
+		</title>
+		<style type="text/css">
+		   #container {
+		   		margin: 100px auto;
+		   		width:250px;
+		   		padding:0;
+		   		overflow: auto;
+		   }
+		   #user {
+		   	    border: 1px solid #d5d5d5;
+		   	    height: 25px;
+		   	    border-radius: 2px;
+
+		   }
+		   #user:hover {
+		   	 border-color: #126db3;
+		   }
+		   input:focus{
+               outline: 0;
+            }
+		</style>
+	</head>
+	<body>
+		<div id ="container">
+			<h1>Input change</h1>
+			<input type="text" placeholder ="name" id="user" value=""> <br>
+		</div>
+		<script 
+			type="text/javascript" 
+			src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+		</script>
+
+		<script type="text">
+		jQuery(function () {
+		    $("#user").click(function(){
+		        alert("text change");
+		    });
+		});
+		</script>
+	</body>
+</html>		
+           
