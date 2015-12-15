@@ -47,7 +47,7 @@
 			<li class="blue"></li>
 			<li class="green"></li>
 			<li class="yellow"></li>
-  $		</ul>
+    	</ul>
 		<script 
 			type="text/javascript" 
 			src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
@@ -55,13 +55,13 @@
 
 			<script type="text/javascript">
 			(function(){
-		        function bounce(event){
-					console.log("Bounce");
-
-					//Your code goes here
-				}
-
-				$('li').on('mouseover', bounce);
+		       function bounce(){
+						$(this).animate({top:'-10px'},200);
+					}
+					function debounce(){
+						$(this).animate({top:'0'}200);
+					}
+					$('li').on('mouseover',bounce).on('mouseout',debounce);
 				
 			})();
 		</script>
